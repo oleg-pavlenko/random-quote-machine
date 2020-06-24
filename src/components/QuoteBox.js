@@ -39,7 +39,7 @@ function QuoteBox() {
     }
     fetchData();
     return () => myRequest.cancel();
-  }, []);
+  }, [updateState]);
 
   useEffect(() => {
     if (state.quotesArr.length) {
@@ -49,7 +49,7 @@ function QuoteBox() {
         draft.randomColor = getRandomRGB();
       });
     }
-  }, [state.quotesArr, state.randomIndex]);
+  }, [state.quotesArr, state.randomIndex, updateState]);
 
   function handleClick() {
     let newRandomIndex = Math.floor(Math.random() * state.quotesArr.length);
