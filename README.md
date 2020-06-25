@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project on Netlify:
+
+[Random Quote Machine](https://naughty-goldberg-94038d.netlify.app)
+
 ## Available Scripts
 
 In the project directory, you can run:
